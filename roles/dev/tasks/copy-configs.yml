@@ -1,2 +1,2 @@
-- name: Copy rtorrent config
-  git: {{ repository }} dest=~/
+- name: Copy bash_profile config
+  get_url: url=https://raw.githubusercontent.com/avadhutp/bash_mafia/master/.bash_profile dest=~/.bash_profile validate_certs=no 
