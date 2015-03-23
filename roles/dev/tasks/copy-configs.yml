@@ -1,2 +1,8 @@
 - name: Copy bash_profile config
-  get_url: url=https://raw.githubusercontent.com/avadhutp/bash_mafia/master/.bash_profile dest=~/.bash_profile validate_certs=no 
+  get_url: url=https://raw.githubusercontent.com/avadhutp/bash_mafia/master/.bash_profile dest=~/.bash_profile validate_certs=no
+
+- name: Enable bash_profile
+  sudo: no   
+  shell: source ~/.bash_profile
+  args:
+     executable: /bin/bash
