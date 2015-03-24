@@ -1,2 +1,20 @@
 - name: Install git
   apt: name=git state=present
+
+- name: Install Java
+  apt: name=openjdk-7-jdk state=present
+
+- name: Install maven
+  apt: name=maven2 state=present
+
+- name: Install MySQL
+  apt: name=mysql-server-5.6 state=present
+
+- name: Install Python mysqldb module
+  apt: name=python-mysqldb state=present
+
+- name: Install curl
+  apt: name=curl state=present
+
+- name: Install vim
+  apt: name=vim state=present

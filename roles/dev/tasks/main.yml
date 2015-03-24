@@ -1,2 +1,4 @@
 - include: install-deps.yml
 - include: copy-configs.yml
+
+- include: setup-mysql.yml
