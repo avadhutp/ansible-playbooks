@@ -3,3 +3,11 @@
     name: mysql 
     state: started
     enabled: true
+
+- name: update mysql root password for all root accounts
+  mysql_user:
+    check_implicit_admin=True
+    name=root
+    login_user=root
+    login_password={{ mysql_password }}
+    password={{ mysql_password }}
