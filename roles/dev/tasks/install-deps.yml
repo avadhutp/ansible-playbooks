@@ -18,3 +18,6 @@
 
 - name: Install vim
   apt: name=vim state=present
+
+- name: Install org-mode
+  apt: name=org-mode state=present
