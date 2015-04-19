@@ -21,3 +21,6 @@
 
 - name: Install org-mode
   apt: name=org-mode state=present
+
+- name: Install bundler
+  apt: name=bundler state=present
