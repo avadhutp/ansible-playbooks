@@ -24,3 +24,6 @@
 
 - name: Install bundler
   apt: name=bundler state=present
+
+- name: Install nodejs
+  apt: name=nodejs state=present
