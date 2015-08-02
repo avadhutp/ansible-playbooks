@@ -27,3 +27,6 @@
 
 - name: Install nodejs
   apt: name=nodejs state=present
+
+- name: Install virtualenv
+  apt: name=python-virtualenv state=present
