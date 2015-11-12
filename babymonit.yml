@@ -1,0 +1,9 @@
+- name: Setup baby monitor (Raspberry Pi)
+  hosts: babymonit
+  remote_user: root
+
+  roles:
+  	- babymonit
+
+  vars_files:
+    - "group_vars/vault.yml"
