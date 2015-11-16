@@ -1,0 +1,4 @@
+- template: src=./start_vid_capture.j2 dest=/usr/bin/start_vid_capture owner=pi group=pi mode=0755
+- template: src=./stop_vid_capture.j2 dest=/usr/bin/stop_vid_capture owner=pi group=pi mode=0755
+- template: src=./init_babymonit.j2 dest=/usr/bin/init_babymonit owner=pi group=pi mode=0755
+- lineinfile: dest=/etc/rc.local insertbefore="exit 0" line="init_babymonit"

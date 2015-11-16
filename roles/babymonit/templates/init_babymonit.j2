@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# After startup, sleep for 20 seconds before trying to start the screen session
+sleep 20
+
+# now start raspivid in a screen session
+screen -dmS babymonit bash 'start_vid_capture'

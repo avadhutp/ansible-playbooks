@@ -3,7 +3,7 @@
   remote_user: root
 
   roles:
-  	- babymonit
+    - babymonit
 
   vars_files:
     - "group_vars/vault.yml"

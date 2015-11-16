@@ -1,2 +1,14 @@
 - name: Install git
   apt: name=git state=present
+
+- name: Install wget
+  apt: name=wget state=present
+
+- name: Install vlc
+  apt: name=vlc state=present
+
+- name: Install screen
+  apt: name=screen state=present
+
+# - name: Install gstreamer
+#   apt: name=gstreamer1.0 state=present

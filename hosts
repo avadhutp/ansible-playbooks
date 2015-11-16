@@ -2,4 +2,4 @@
 localhost ansible_connection=local
 
 [babymonit]
-localhost ansible_connection=local
+ido.crabdance.com ansible_ssh_user=pi

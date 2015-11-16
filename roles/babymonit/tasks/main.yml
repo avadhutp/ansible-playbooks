@@ -1,1 +1,3 @@
 - include: install-deps.yml
+- include: cron-entries.yml
+- include: install-video-capture.yml
