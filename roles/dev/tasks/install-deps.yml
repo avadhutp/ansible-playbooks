@@ -1,3 +1,6 @@
+- name: Add key for gstreamer
+  apt_repository: repo='ppa:gstreamer-developers/ppa'
+
 - name: Install git
   apt: name=git state=present
 
@@ -34,5 +37,5 @@
 - name: Install tmux
   apt: name=tmux state=present
 
-- name: Install irssi
-  apt: name=irssi state=present
+- name: Install gstreamer and plugins
+  apt: name=gstreamer1.0*

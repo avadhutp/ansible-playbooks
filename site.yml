@@ -1,5 +1,5 @@
 - name: Setup home PC (Toshiba Portege)
-  hosts: all
+  hosts: dev
   remote_user: root
 
   roles:
