@@ -1,6 +1,7 @@
 - name: Setup baby monitor (Raspberry Pi)
   hosts: babymonit
   remote_user: root
+  sudo: True
 
   roles:
     - babymonit
