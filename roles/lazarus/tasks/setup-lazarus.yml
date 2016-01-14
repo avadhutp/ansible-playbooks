@@ -1,0 +1,4 @@
+- name: Create temp directory for lazarus
+  file: path=/tmp/lazarus state=directory owner=lazarus group=lazarus mode=0755
+
+- template: src-./lazarus.ini.j2 dest=/etc/lazarus.ini owner=lazarus group=lazarus mode=0755

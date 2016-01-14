@@ -1,9 +1,6 @@
-- name: Install git
-  apt: name=git state=present
-
-- name: Install golang
-  apt: name=golang state=present
-
-- name: Install vlc
-  apt: name=vlc state=present
-
+- name: Install required deps
+  apt: name={{ item }} state=present
+  with_items:
+    - git
+    - golang
+    - vlc
