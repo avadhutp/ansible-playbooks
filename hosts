@@ -3,3 +3,6 @@ localhost ansible_connection=local
 
 [babymonit]
 ido.crabdance.com ansible_ssh_user=pi
+
+[lazarus]
+lazarus.crabdance.com ansible_ssh_user=lazarus
