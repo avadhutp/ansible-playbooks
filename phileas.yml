@@ -6,4 +6,5 @@
     - phileas
 
   vars_files:
+    - "group_vars/vault.yml"
     - "group_vars/phileas.yml"

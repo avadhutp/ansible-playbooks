@@ -1,0 +1,5 @@
+- name: Install required deps
+  apt: name={{ item }} state=present
+  with_items:
+    - git
+    - mysql-server-5.6

@@ -1,0 +1,29 @@
+- name: Start the MySQL service
+  service: 
+    name: mysql 
+    state: started
+    enabled: true
+
+- name: update mysql root password for all root accounts
+  mysql_user:
+    check_implicit_admin=True
+    name=root
+    login_user=root
+    login_password={{ mysql_password }}
+    password={{ mysql_password }}
+
+- name: add philease db
+  mysql_db:
+    db=phileas
+    state=present
+    login_user=root
+    login_password={{ mysql_password }}
+
+- name: add phileas user
+  mysql_user: 
+    user={{ mysql.username }}
+    password={{ mysql.password }}
+    priv=phileas.*:ALL
+    state=present
+    login_user=root
+    login_password={{ mysql_password }}

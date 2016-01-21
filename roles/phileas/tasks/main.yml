@@ -1,1 +1,3 @@
+- include: install-deps.yml
+- include: setup-mysql.yml
 - include: setup-phileas.yml
