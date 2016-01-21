@@ -4,11 +4,11 @@ mapquest_key = {{ common.mapquest_key }}
 google_maps_key = {{ common.google_maps_key }}
 
 [mysql]
-host = localhost
-port = 3306
-username = 
-password = 
-schema = phileas
+host = {{ mysql.host }}
+port = {{ mysql.port }}
+username = {{ mysql.username }}
+password = {{ mysql.password }}
+schema = {{ mysql.schema }}
 
 [instagram]
 client_id = 
