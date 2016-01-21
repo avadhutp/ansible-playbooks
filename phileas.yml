@@ -1,0 +1,9 @@
+- name: Setup phileas
+  hosts: phileas
+  remote_user: root
+
+  roles:
+    - phileas
+
+  vars_files:
+    - "group_vars/phileas.yml"

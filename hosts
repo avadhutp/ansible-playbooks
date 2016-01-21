@@ -6,3 +6,6 @@ ido.crabdance.com ansible_ssh_user=pi
 
 [lazarus]
 lazarus.crabdance.com ansible_ssh_user=lazarus
+
+[phileas]
+localhost ansible_connection=local
