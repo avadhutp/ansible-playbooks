@@ -1,3 +1,19 @@
-- include: install-deps.yml
-- include: setup-mysql.yml
-- include: setup-phileas.yml
+- include: ../../common/mysql-dev-personal.yml
+
+- name: add philease db
+  mysql_db:
+    db=phileas
+    state=present
+    login_user=root
+    login_password={{ mysql_password }}
+
+- name: add phileas user
+  mysql_user: 
+    user={{ mysql.username }}
+    password={{ mysql.password }}
+    priv=phileas.*:ALL
+    state=present
+    login_user=root
+    login_password={{ mysql_password }}
+
+- template: src=./phileas.ini.j2 dest=/etc/phileas.ini
