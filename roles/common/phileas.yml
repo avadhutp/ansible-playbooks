@@ -15,4 +15,7 @@
   with_items:
     - vlc
 
+- name: install youtube-dl
+  pip: name=youtube_dl state=present extra_args=--upgrade
+
 - template: src=../common/templates/phileas.ini.j2 dest=/etc/phileas.ini
