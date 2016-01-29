@@ -9,3 +9,4 @@
   vars_files:
     - "group_vars/common.yml"
     - "group_vars/crab.yml"
+    - "group_vars/phileas.yml"

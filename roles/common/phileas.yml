@@ -1,0 +1,13 @@
+- name: add phileas db
+  mysql_db:
+    db=phileas
+    state=present
+
+- name: add phileas user
+  mysql_user: 
+    user={{ phileas.mysql.username }}
+    password={{ phileas.mysql.password }}
+    priv=phileas.*:ALL
+    state=present
+
+# - template: src=./phileas.ini.j2 dest=/etc/phileas.ini
