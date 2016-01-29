@@ -1,11 +1,5 @@
 [dev]
 localhost ansible_connection=local
 
-[babymonit]
-ido.crabdance.com ansible_ssh_user=pi
-
-[lazarus]
-lazarus.crabdance.com ansible_ssh_user=lazarus
-
-[phileas]
-localhost ansible_connection=local
+[crab]
+crab.k.vu ansible_ssh_user=pi ansible_ssh_port=2048

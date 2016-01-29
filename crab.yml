@@ -1,0 +1,10 @@
+- name: Setup crab
+  hosts: crab
+  remote_user: pi
+
+  roles:
+    - crab
+
+  vars_files:
+    - "group_vars/vault.yml"
+    - "group_vars/crab.yml"

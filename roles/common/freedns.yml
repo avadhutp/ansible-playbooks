@@ -1,0 +1,3 @@
+- cron: name="update freedns ({{ freedns.name }})"
+        minute="2,7,12,17,22,27,32,37,42,47,52,57"
+        job="sleep 27 ; wget -O - http://freedns.afraid.org/dynamic/update.php?{{ freedns.secret }} >> /dev/null 2>&1 &"

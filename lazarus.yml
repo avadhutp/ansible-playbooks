@@ -1,6 +1,0 @@
-- name: Setup lazarus pi
-  hosts: lazarus
-  remote_user: root
-
-  roles:
-    - lazarus
