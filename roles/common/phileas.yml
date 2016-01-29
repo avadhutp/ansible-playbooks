@@ -10,4 +10,9 @@
     priv=phileas.*:ALL
     state=present
 
+- name: add additional dependencies
+  apt: pkg={{ item }} state=present
+  with_items:
+    - vlc
+
 - template: src=../common/templates/phileas.ini.j2 dest=/etc/phileas.ini
