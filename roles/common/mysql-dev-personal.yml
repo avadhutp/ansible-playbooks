@@ -27,12 +27,8 @@
   mysql_user: 
     user=""
     state=absent
-    login_user=root
-    login_password={{ mysql.password }}
 
 - name: remove the MySQL test database
   mysql_db:
     db=test
     state=absent
-    login_user=root
-    login_password={{ mysql.password }}
