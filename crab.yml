@@ -1,10 +1,11 @@
 - name: Setup crab
   hosts: crab
   remote_user: pi
+  sudo: yes
 
   roles:
     - crab
 
   vars_files:
-    - "group_vars/vault.yml"
+    - "group_vars/common.yml"
     - "group_vars/crab.yml"

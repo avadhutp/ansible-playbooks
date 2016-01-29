@@ -1,6 +1,6 @@
 - include: ../../common/freedns.yml
 
-# - include: ../../common/mysql-dev-personal.yml
+- include: ../../common/mysql-dev-personal.yml
 
 # - name: add philease db
 #   mysql_db:

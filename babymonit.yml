@@ -5,6 +5,3 @@
 
   roles:
     - babymonit
-
-  vars_files:
-    - "group_vars/vault.yml"
