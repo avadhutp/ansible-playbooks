@@ -3,3 +3,6 @@
 - include: ../../common/mysql-dev-personal.yml
 
 - include: ../../common/phileas.yml
+
+- include: ../../common/lazarus.yml
+
